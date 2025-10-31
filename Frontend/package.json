@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_NO_WARNINGS=1 WEBPACK_HIDE_WARNINGS=1 next dev",
-    "build": "cross-env NODE_NO_WARNINGS=1 WEBPACK_HIDE_WARNINGS=1 next build",
-    "start": "next start",
+    "dev": "node init && cross-env NODE_NO_WARNINGS=1 WEBPACK_HIDE_WARNINGS=1 next dev",
+    "build": "node init && cross-env NODE_NO_WARNINGS=1 WEBPACK_HIDE_WARNINGS=1 next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "clean": "rmdir /s /q .next && rmdir /s /q node_modules",
     "fresh-install": "pnpm run clean && pnpm install"
